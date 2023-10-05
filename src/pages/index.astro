@@ -3,11 +3,15 @@ import Layout from '../layouts/Layout.astro'
 import Hero from '../components/landing/Hero.astro'
 import About from '../components/landing/About.astro'
 import Projects from '../components/landing/Projects.astro'
+import Navbar from '../components/Navbar.astro';
+import Footer from '../components/Footer.astro';
 
 ---
 
 <Layout title="Landing">
+	<Navbar />
 	<Hero />
-	<About />
 	<Projects />
+	<About />
+	<Footer />
 </Layout>

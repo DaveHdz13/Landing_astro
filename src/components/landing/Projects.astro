@@ -1,5 +1,17 @@
 ---
-import Layout from '../../layouts/Layout.astro'
+import projects from '../../config/projects.json'
+
+//console.log(projects);
+
 ---
 
-<h1>Projects</h1>
+<section>
+  {
+    projects.map(project => (
+      <div class="flex flex-col justify-center items-center mt-8 mb-8 pr-8 pl-8">
+        <h1 class="font-bold">{project.title}</h1>
+        <p class="text-center w-9/12">{project.description}</p>
+      </div>
+    ))
+  }
+</section>
